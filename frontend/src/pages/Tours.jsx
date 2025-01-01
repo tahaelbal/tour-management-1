@@ -11,7 +11,7 @@ import {Col} from 'reactstrap';
 import axios from 'axios'
 
 const Tours = ({perPage}) => {
-  const [activite , setActivite] = useState([])
+  const [activite , setActivite ] = useState([])
   const [pageCount, setPageCount] = useState(0)
   
 
@@ -22,8 +22,8 @@ const Tours = ({perPage}) => {
         consumer_key: "ck_bdaa0764cfdaeed34e7daf87ee11d6fb7193031a",
         consumer_secret: "cs_d2a58ed464609e02267574f858baaa4058878a21",
         per_page: perPage, // Number of products per page
-        page: page,
-        category:356        // The current page
+        page: page,         // The current page
+        category:356       
       };
     
       try {
@@ -35,7 +35,7 @@ const Tours = ({perPage}) => {
       }
     };
     
-    // Example: Fetch 5 products from page 2
+    // Example: Fetch 20 products from page 2
     fetchProducts(2,perPage|| 20);
   },[])
 
