@@ -12,6 +12,7 @@ import FeaturedTourList from '../components/Featured-tours/FeaturedTourList';
 import MasonryImagesGallery from '../components/Image-gallery/MasonryImagesGallery';
 import Testimonials from '../components/Testimonial/Testimonials';
 import Newsletter from '../shared/Newsletter';
+import Tours from './Tours';
 
 const Home = () => {
   return <>
@@ -77,7 +78,8 @@ const Home = () => {
               <Subtitle subtitle={'Explore'}/>
               <h2 className='featured__tour-title'>Our feature tours</h2>
             </Col>
-            <FeaturedTourList/>
+            <Tours perPage={6}/>
+            {/* <FeaturedTourList/> */}
           </Row>
         </Container>
       </section>
